@@ -1,0 +1,12 @@
+# AWS SDK for Python (Boto3)
+boto3>=1.35.0
+
+# AWS SDK Core
+botocore>=1.35.0
+
+# Load environment variables from .env file
+python-dotenv>=1.0.0
+
+# Strands Agents SDK 
+strands-agents[litellm]>=0.1.0
+strands-agents-tools>=0.1.0

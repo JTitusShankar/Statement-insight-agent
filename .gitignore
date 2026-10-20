@@ -1,0 +1,7 @@
+.env
+.venv
+.vscode/
+Cursor code/
+__pycache__/
+pyrightconfig.json
+
