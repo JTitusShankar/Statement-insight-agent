@@ -11,5 +11,6 @@ def get_model() -> LiteLLMModel:
 
     return LiteLLMModel(
         client_args = {"api_key":api_key}, 
-        model_id="groq/openai/gpt-oss-20b"
+        model_id="groq/openai/gpt-oss-20b",
+        params={"temperature": 0.0, "max_tokens": 8192}
         )

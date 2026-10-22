@@ -1,0 +1,96 @@
+[
+  {
+    "id": "recurring-subscriptions",
+    "question": "What are the recurring subscriptions across my accounts?",
+    "expected_recurring": [
+      "chequing_001 | 2026-07-01 | NETFLIX.COM | -15.99",
+      "chequing_001 | 2026-08-01 | NETFLIX.COM | -15.99",
+      "chequing_001 | 2026-09-01 | NETFLIX.COM | -15.99",
+      "credit_002 | 2026-07-02 | SPOTIFY USA | -11.99",
+      "credit_002 | 2026-08-02 | SPOTIFY USA | -11.99",
+      "credit_002 | 2026-09-02 | SPOTIFY USA | -11.99"
+    ],
+    "expected_unusual": [],
+    "notes": "Netflix -15.99 on chequing_001 and Spotify -11.99 on credit_002 appear once in July, August, and September."
+  },
+  {
+    "id": "recurring-netflix-chequing",
+    "question": "Do I have a recurring Netflix charge on chequing_001?",
+    "expected_recurring": [
+      "chequing_001 | 2026-07-01 | NETFLIX.COM | -15.99",
+      "chequing_001 | 2026-08-01 | NETFLIX.COM | -15.99",
+      "chequing_001 | 2026-09-01 | NETFLIX.COM | -15.99"
+    ],
+    "expected_unusual": [],
+    "notes": "NETFLIX.COM -15.99 on chequing_001 on 2026-07-01, 2026-08-01, and 2026-09-01."
+  },
+  {
+    "id": "recurring-spotify-credit",
+    "question": "What subscriptions are on credit_002?",
+    "expected_recurring": [
+      "credit_002 | 2026-07-02 | SPOTIFY USA | -11.99",
+      "credit_002 | 2026-08-02 | SPOTIFY USA | -11.99",
+      "credit_002 | 2026-09-02 | SPOTIFY USA | -11.99"
+    ],
+    "expected_unusual": [],
+    "notes": "SPOTIFY USA -11.99 on credit_002 on 2026-07-02, 2026-08-02, and 2026-09-02."
+  },
+  {
+    "id": "unusual-large-charges",
+    "question": "Which charges look unusually high compared with other months?",
+    "expected_recurring": [],
+    "expected_unusual": [
+      "chequing_001 | 2026-08-27 | LOBLAWS #1047 | -312.80",
+      "credit_002 | 2026-08-09 | AMAZON.CA | -412.99",
+      "credit_002 | 2026-08-21 | TIM HORTONS #2561 | -4.25"
+    ]
+  },
+  {
+    "id": "unusual-amazon-spike",
+    "question": "Is there anything unusual about my Amazon spending?",
+    "expected_recurring": [],
+    "expected_unusual": [
+      "credit_002 | 2026-08-09 | AMAZON.CA | -412.99"
+    ],
+    "notes": "Amazon is -38.20 in July and -42.18 in September, then -412.99 on 2026-08-09."
+  },
+  {
+    "id": "unusual-new-merchant",
+    "question": "Did any new merchants appear that I had not seen in other months?",
+    "expected_recurring": [],
+    "expected_unusual": [
+      "credit_002 | 2026-08-21 | TIM HORTONS #2561 | -4.25"
+    ],
+    "notes": "Tim Hortons appears only in August; Starbucks appears in July and September but not August."
+  },
+  {
+    "id": "both-overview",
+    "question": "Summarize my recurring subscriptions and any unusual charges.",
+    "expected_recurring": [
+      "chequing_001 | 2026-07-01 | NETFLIX.COM | -15.99",
+      "chequing_001 | 2026-08-01 | NETFLIX.COM | -15.99",
+      "chequing_001 | 2026-09-01 | NETFLIX.COM | -15.99",
+      "credit_002 | 2026-07-02 | SPOTIFY USA | -11.99",
+      "credit_002 | 2026-08-02 | SPOTIFY USA | -11.99",
+      "credit_002 | 2026-09-02 | SPOTIFY USA | -11.99"
+    ],
+    "expected_unusual": [
+      "chequing_001 | 2026-08-27 | LOBLAWS #1047 | -312.80",
+      "credit_002 | 2026-08-09 | AMAZON.CA | -412.99",
+      "credit_002 | 2026-08-21 | TIM HORTONS #2561 | -4.25"
+    ]
+  },
+  {
+    "id": "both-chequing-only",
+    "question": "On chequing_001, what is recurring and what looks unusual?",
+    "expected_recurring": [
+      "chequing_001 | 2026-07-01 | NETFLIX.COM | -15.99",
+      "chequing_001 | 2026-08-01 | NETFLIX.COM | -15.99",
+      "chequing_001 | 2026-09-01 | NETFLIX.COM | -15.99"
+    ],
+    "expected_unusual": [
+      "chequing_001 | 2026-08-27 | LOBLAWS #1047 | -312.80"
+    ],
+    "notes": "Typical Loblaws amounts are -84.20 in July and -79.55 in September."
+  }
+]

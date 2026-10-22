@@ -1,19 +1,19 @@
 {
   "July": [
     {
-      "account": "checking_001",
+      "account": "chequing_001",
       "date": "2026-07-01",
       "description": "NETFLIX.COM",
       "amount": -15.99
     },
     {
-      "account": "checking_001",
+      "account": "chequing_001",
       "date": "2026-07-08",
       "description": "LOBLAWS #1047",
       "amount": -84.20
     },
     {
-      "account": "checking_001",
+      "account": "chequing_001",
       "date": "2026-07-19",
       "description": "STARBUCKS #1842",
       "amount": -6.45
@@ -39,19 +39,19 @@
   ],
   "August": [
     {
-      "account": "checking_001",
+      "account": "chequing_001",
       "date": "2026-08-01",
       "description": "NETFLIX.COM",
       "amount": -15.99
     },
     {
-      "account": "checking_001",
+      "account": "chequing_001",
       "date": "2026-08-14",
       "description": "UBER TRIP",
       "amount": -22.40
     },
     {
-      "account": "checking_001",
+      "account": "chequing_001",
       "date": "2026-08-27",
       "description": "LOBLAWS #1047",
       "amount": -312.80
@@ -77,19 +77,19 @@
   ],
   "September": [
     {
-      "account": "checking_001",
+      "account": "chequing_001",
       "date": "2026-09-01",
       "description": "NETFLIX.COM",
       "amount": -15.99
     },
     {
-      "account": "checking_001",
+      "account": "chequing_001",
       "date": "2026-09-10",
       "description": "STARBUCKS #1842",
       "amount": -5.85
     },
     {
-      "account": "checking_001",
+      "account": "chequing_001",
       "date": "2026-09-22",
       "description": "LOBLAWS #1047",
       "amount": -79.55
